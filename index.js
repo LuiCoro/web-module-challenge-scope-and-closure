@@ -16,7 +16,7 @@
 function processFirstItem(stringList, callback) {
   return callback(stringList[0])
 }
-console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
+console.log(processFirstItem(['foo', 'bar'], function (str) { return str + str }));
 
 // ⭐️ Example Challenge END ⭐️
 
@@ -39,7 +39,7 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
 function counterMaker() {
   let count = 0;
   return function counter() {
-   return count++;
+    return count++;
   }
 }
 
@@ -62,9 +62,10 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning(random) {
+  return Math.floor(Math.random() * 3 + 1);
 }
+console.log(inning())
 
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
@@ -79,9 +80,9 @@ Use the finalScore function below to do the following:
   "Home": 11,
   "Away": 5
 }
-*/ 
+*/
 
-function finalScore(/*code Here*/){
+function finalScore(/*code Here*/) {
   /*Code Here*/
 }
 
@@ -144,11 +145,11 @@ function scoreboard(/* CODE HERE */) {
 
 
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
-function foo(){
+function foo() {
   //console.log('its working');
   return 'bar';
 }
-export default{
+export default {
   foo,
   processFirstItem,
   counter1,
